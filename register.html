@@ -1,0 +1,165 @@
+<!--all the code are copyright to group programming web 1 2019.-->
+<!--some reference from https://www.w3schools.com css and html-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HANDIWORK new announcements</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Css link here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--scripts here-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--scrpts ends-->
+  </head>
+  <body>
+    <!--navbar code here-->
+    <div class="top-nav-bar">
+      <div class="search-box">
+        <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+        <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+        <a href="index.html"><img src="img/logo.png" alt="SiteLogo"></img></a>
+        <input type="text" class="form-control">
+        <span class="input-group-text"><i class="fa fa-search"></i></span>
+
+      </div>
+      <div class="menu-bar">
+        <ul>
+          <li><a href="cart.html"><i class="fa fa-shopping-basket"></i>Cart</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="header">
+      <div class="menu" id="side-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="products.html">Products</a></i></li>
+          <li><a href="charity.html">Charity Funds</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="slider">
+        <div id="slider" class="carousel" data-ride="carousel">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/slider.png" alt="Nepal">
+              <div class="carousel-caption">
+                <h3>Street Handcrafts In Nepal </h3>
+                <p>Source Needpix.com</p>
+              </div>
+            </div>
+            </div>
+          </div>
+      </div>
+
+    </section>
+
+    <!--registration form code here-->
+    <section class="register">
+    <form action="action_page.php">
+  <div class="container-form">
+    <h1>Register yourself</h1>
+    <hr>
+    <label for="fname">Username</label>
+    <input type="text" id="uname" name="username" placeholder="type username">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name.">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last last name.">
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <hr>
+
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container-form signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+</section>
+
+    <!--- footer------->
+  	<section class="footer">
+  		<div class="container text-center">
+  			<div class="row">
+  				<div class="col-md-3">
+  					<h1>Useful links</h1>
+  					<p>Privacy Policy</p>
+  					<p>Terms of use</p>
+  					<p>Return policy</p>
+  					<p>Discount  Coupans </p>
+
+  				</div>
+
+  				<div class="col-md-3">
+  					<h1>Home</h1>
+  					<p>About us</p>
+  					<p>Announcements</p>
+  					<p>Careers</p>
+  					<p>Contact Us</p>
+
+  				</div>
+  				 <div class="col-md-3">
+  					<h1>Follow us on</h1>
+  					<p><i class="fa fa-facebook-official "></i>Facebook</p>
+  					<p><i class="fa fa-twitter "></i>Twitter</p>
+  					<p><i class="fa fa-linkedin"></i>Linkedin</p>
+  					<p><i class="fa fa-youtube-play  "></i>Youtube </p>
+
+  				</div>
+  				 <div class="col-md-3 footer-image">
+  					<h1>Download App</h1>
+  					<img src="img/play.png">
+  				</div>
+
+  			</div>
+  			<hr>
+  			<p class="copyright"> &copy; 2020. Designed by WebProgramming Group1</p>
+  		</div>
+
+  	</section>
+
+  <!--navbar script code here-->
+      <script>
+        function openmenu()
+        {
+          document.getElementById("side-menu").style.display="block";
+          document.getElementById("menu-btn").style.display="none";
+          document.getElementById("close-btn").style.display="block";
+        }
+
+        function closemenu()
+        {
+          document.getElementById("side-menu").style.display="none";
+          document.getElementById("menu-btn").style.display="block";
+          document.getElementById("close-btn").style.display="none";
+        }
+      </script>
+
+
+
+    </body>
+  </html>
